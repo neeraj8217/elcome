@@ -3,9 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Section</title>
+             <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Allison&family=Outfit&display=swap" rel="stylesheet">
+       <!-- =========================================tailwind css================================== -->
+       <link rel="stylesheet" href="/css/tailwind.css" />
+           <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+        <!-- ======================icons======================= -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Contact us</title>
 </head>
-<body>
-    
+<body class="
+
+
+">
+<!-- vsm:bg-red-200 sm:bg-yellow-200 md:bg-blue-200 lg:bg-orange-200 xl:bg-lime-200 2xl:bg-slate-100 -->
+    <!-- ========================================================navbar section start ========================================-->
+    <div class="overflow-hidden">
+        <nav
+          class="
+          bg-[url('/assets/images/bc.jpg')] w-full bg-center bg-cover flex justify-between items-center px-[1.5em] py-2"
+        >
+          <a href="#home"
+            ><img
+              class="vsm:w-36 sm:w-44 md:w-52 aspect-auto"
+              src="./assets/logo/Logo1 1.png"
+              alt=""
+          /></a>
+          <input type="checkbox" id="hamburger" />
+          <label class="text-white text-2xl vsm:block sm:hidden" for="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="text-white gap-4 flex list-none">
+            <li>
+              <a
+                class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+                href="#features"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+                href="#FAQ"
+                >Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ==========================================================nav sectin end=========================================== -->
+        <!-- =========================================================contact form start========================================== -->
+        <section class="mx-10 flex-col justify-center items-center vsm:mx-5 md:mx-0 my-5 2xl:my-10">
+            <div class="mb-20">
+                <h1
+                  class="uppercase sm:-mb-[6rem]  vsm:mt-0 flex items-center justify-center font-bold text-stone-200 sm:text-9xl vsm:text-6xl vsm:-mb-[4rem]">
+                  Contacts
+                </h1>
+                <h1
+                  style="font-family: 'Allison', cursive"
+                  class="relative flex justify-center items-center sm:text-7xl vsm:text-5xl"
+                >
+                  Contacts
+                </h1>
+                <p
+                  class="text-blue-500 flex justify-center items-center text-center mx-96 vsm:mx-10 text-4xl"
+                >
+                  <!-- Extraordinary Team -->
+                </p>
+              </div>
+            <div style=" grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));"
+             class="grid grid-cols-3 gap-4">
+                <div class="w-full h-auto bg-blue-500 rounded-3xl">
+                    <iframe class="w-full h-full rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39903.40882196932!2d85.5981699168868!3d22.67577996684336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5823c4614c93f%3A0xf46c2c5fd95607e6!2sChakradharpur%2C%20Jharkhand%20833102!5e0!3m2!1sen!2sin!4v1691693003003!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="bg-blue-300 rounded-3xl w-full py-10 pb-40">
+                    <div class="mx-10">
+                    <h1 class="text-4xl 2xl:text-6xl font-normal tracking-widest leading-5">Meet Us</h1>
+                    <div class="flex mt-10">
+                        <div class="text-prime text-4xl font-bold">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="text-2xl 2xl:text-3xl ml-5 font-bold">
+                            <h1>Phone</h1>
+                        </div>
+                    </div>
+                    <h1 class="text-base 2xl:text-xl mt-2 tracking-widest">+91 8271217963</h1>
+
+                    <div class="flex mt-20">
+                        <div class="text-prime text-3xl font-bold ">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="text-2xl ml-5 font-bold 2xl:text-3xl">
+                            <h1>Our Office</h1>
+                        </div>
+                    </div>
+                    <h1 class="text-base mt-2 2xl:text-xl tracking-widest">121 Rock Sreet, 21 Avenue,New York, NY 92103-9000</h1>
+                    <div class="flex mt-20">
+                        <div class="text-prime text-3xl font-bold ">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="text-2xl ml-5 font-bold 2xl:text-3xl">
+                            <h1>Chat To Us</h1>
+                        </div>
+                    </div>
+                    <h1 class="text-base mt-2 2xl:text-xl tracking-widest">hicompany@gmail.com</h1>
+                   </div>
+                </div>
+
+
+                <div class=" bg-emerald-300 rounded-3xl w-full">
+                    <div class="flex flex-col m-10">
+                    <h1 class="font-normal  text-4xl 2xl:text-6xl tracking-wider">Get in Touch</h1>
+                    <p class="2xl:mt-10 mt-5 text-2xl">Name</p>    
+                    <input  class="w-full border-none  outline-none bg-grey-300 p-3 text-xl bg-coolGray-50 rounded-xl" 
+                    type="text" name="" id="" placeholder="Enter Your Name" required>
+
+                    <p class=" 2xl:mt-10 mt-5 text-2xl">Phone</p>    
+                    <input  class="w-full border-none  outline-none bg-grey-300 p-3 text-xl bg-coolGray-50 rounded-xl" 
+                    type="text" name="" id="" placeholder="Enter Your Name" required>
+
+                    <p class="2xl:mt-10 mt-5 text-2xl">How can we hlp you?</p>    
+                    <textarea name="" id="" cols="20" rows="10"></textarea>
+                        <button class=" px-20 py-4 bg-prime text-white rounded-2xl mt-5 2xl:mt-10 text-3xl font-semibold">Submit</button>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================contact form end========================================== -->
+        <!-- =====================================================footer section start ========================================================-->
+      <footer
+      class="bg-[url('/assets/images/bc.jpg')] w-full aspect-auto bg-cover rounded-t-[2.5rem] absolute"
+    >
+      <h1
+        class="flex justify-center items-center text-center font-bold text-white vsm:text-3xl vsm:pt-10 vsm:mx-5 md:pt-28 md:text-6xl sm:mx-20 xl:mx-40 lg:mx-20 2xl:mx-52 2xl:text-[6rem] leading-tight"
+      >
+        Register Now to get a Big Discount just for you
+      </h1>
+      <div class="flex justify-center items-center mt-10">
+        <button
+          class="text-white bg-blue-600 hover:bg-prime rounded-full font-bold md:text-xl md:px-9 md:py-3 vsm:px-5 vsm:text-base vsm:py-2"
+        >
+          Join Now
+        </button>
+      </div>
+      <div class="flex justify-between items-center mt-5">
+        <div class="flex flex-col justify-between items-center w-2/6">
+          <img
+            class="vsm:w-28 md:w-48 lg:w-56 xl:w-72 2xl:w-80 aspect-auto"
+            src="./assets/logo/Logo1 1.png"
+            alt=""
+          />
+          <h1
+            class="vsm:mt-5 md:mt-10 lg:mt-14 2xl:mt-20 vsm:text-xs vsm:mx-2 sm:text-sm md:text-base lg:text-xl xl:text-xl 2xl:text-2xl text-[#aab0bd] vsm:px-2 sm:px-6 md:px-10 lg:px-20 lg:-ml-[1.5rem] xl:px-32 2xl:px-44"
+          >
+            We help you to improve your skills
+          </h1>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-2/6 vsm:mx-2 mx-10"
+        >
+          <h1 class="md:text-5xl vsm:text-3xl font-bold text-white">Info</h1>
+          <p class="text-[#aab0bd] md:text-xl">About</p>
+          <p class="text-[#aab0bd] md:text-xl">Services</p>
+          <p class="text-[#aab0bd] md:text-xl">Products</p>
+          <p class="text-[#aab0bd] md:text-xl">Contacts</p>
+        </div>
+        <div class="w-2/6 vsm:ml-2 ml-10">
+          <h1 class="md:text-5xl vsm:text-3xl font-bold text-white">Links</h1>
+          <p class="text-[#aab0bd] md:text-xl">Blogs</p>
+          <p class="text-[#aab0bd] md:text-xl">Our Customers</p>
+          <p class="text-[#aab0bd] md:text-xl">Partners</p>
+          <p class="text-[#aab0bd] md:text-xl">Before and After</p>
+        </div>
+      </div>
+      <div class="flex vsm:ml-5 lg:ml-24 2xl:ml-40">
+        <div
+          class="w-3/4 font-bold justify-between items-end md:mt-16 text-[#aab0bd] vsm:mt-16"
+        >
+          <p>Design by sushmit and Neeraj</p>
+        </div>
+        <div
+          class="w-1/4 justify-between items-end mr-30 text-[#aab0bd] vsm:text-[1rem] sm:text-[1.4rem] lg:text-[1.7rem] lg:mt-16 vsm:mt-16"
+        >
+          <a class="md:mr-3" href=""
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a class="md:mx-3" href=""
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a class="md:mx-3" href=""
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a class="md:mx-3" href=""
+            ><ion-icon name="logo-whatsapp"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
+  <!-- ====================================================footer section end =============================================-->
+</div>  
 </body>
 </html>
