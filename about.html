@@ -4,73 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===================================fonts ionics==========================-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <!-- =========================================tailwind css================================== -->
     <link rel="stylesheet" href="/css/tailwind.css" />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <title>About serction</title>
   </head>
   <body
     class=" 
-    ">
+    "
+  >
     <!-- vsm:bg-red-200 sm:bg-yellow-200 md:bg-blue-200 lg:bg-orange-200 xl:bg-lime-200 2xl:bg-slate-100 -->
     <!-- ========================================================navbar section start ========================================-->
     <div class="overflow-hidden">
       <nav
-        class="
-        bg-[url('/assets/images/bc.jpg')] w-full bg-center bg-cover flex justify-between items-center px-[1.5em] py-2"
+        class="bg-[url('/assets/images/bc.jpg')] w-full bg-center bg-cover flex justify-between items-center px-[1.5em] py-2"
       >
-        <a href="#home"
+        <a href="/index.html"
           ><img
             class="vsm:w-36 sm:w-44 md:w-52 aspect-auto"
             src="./assets/logo/Logo1 1.png"
             alt=""
         /></a>
-        <input type="checkbox" id="hamburger" />
-        <label class="text-white text-2xl vsm:block sm:hidden" for="hamburger">
-          <i class="fa-solid fa-bars"></i>
-        </label>
+
         <ul class="text-white gap-4 flex list-none">
           <li>
             <a
               class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
-              href="#about"
+              href="/about.html"
               >About</a
             >
           </li>
           <li>
             <a
               class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
-              href="#features"
+              href="/product.html"
               >Products</a
             >
           </li>
           <li>
             <a
               class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
-              href="#services"
+              href="/service.html"
               >Services</a
             >
           </li>
           <li>
             <a
               class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
-              href="#FAQ"
+              href="/contact.html"
               >Contacts
             </a>
+          </li>
+        </ul>
+        <button
+          id="nav-button"
+          class="bg-white w-6 h-6 z-30 flex justify-center items-center hover-link text-white vsm:text-black text-3xl my-[1.7rem] mx-5 sm:hidden"
+        >
+          <ion-icon name="reorder-four-outline"></ion-icon>
+        </button>
+        <ul
+          id="nav-menu"
+          class="pl-5 bg-white justify-start text-xl z-20 absolute top-0 -left-full flex-col w-[60%] h-screen items-start flex"
+        >
+          <div class="flex w-full border-b-4 border-slate-200">
+            <li class="">
+              <a href="/index.html"> <img
+                class="w-56 aspect-auto my-10"
+                src="./assets/logo/Logo1 1.png "
+                alt=""
+              /></a>
+            </li>
+            <li id="close-button" class="text-4xl mt-2">
+              <ion-icon name="close-outline"></ion-icon>
+            </li>
+          </div>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/product.html">Products</a>
+          </li>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/service.html">Services</a>
+          </li>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/contact.html">Contacts</a>
           </li>
         </ul>
       </nav>
       <!-- ==========================================================nav sectin end=========================================== -->
       <!-- =============================================================hero section satrt ============================================-->
-      <section class="mt-14 vsm:mx-5 sm:mx-10 md:mx-14 lg:mx-16 xl:mx-28 2xl:mx-52 overflow-hidden ">
-        <div style=" grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));"
+      <section
+        class="mt-14 vsm:mx-5 sm:mx-10 md:mx-14 lg:mx-16 xl:mx-28 2xl:mx-52 overflow-hidden"
+      >
+        <div
+          style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))"
           class="grid grid-cols-2 gap-4"
         >
           <div class="text-left">
@@ -98,9 +142,12 @@
               Sign Up for Free
             </button>
           </div>
-          <div
-            class="vsm:my-8  flex justify-center items-center">
-            <img class=" w-full max-w-full h-auto aspect-auto" src="/assets/images/main-image.png.webp" alt="" />
+          <div class="vsm:my-8 flex justify-center items-center">
+            <img
+              class="w-full max-w-full h-auto aspect-auto"
+              src="/assets/images/main-image.png.webp"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -109,7 +156,8 @@
       <section class="lg:mx-10 vsm:mx-6 vsm:mt-10">
         <div class="mb-20">
           <h1
-            class="uppercase sm:-mb-[6rem]  vsm:mt-0 flex items-center justify-center font-bold text-stone-200 sm:text-9xl vsm:text-6xl vsm:-mb-[4rem]">
+            class="uppercase sm:-mb-[6rem] vsm:mt-0 flex items-center justify-center font-bold text-stone-200 sm:text-9xl vsm:text-6xl vsm:-mb-[4rem]"
+          >
             MISSION
           </h1>
           <h1
@@ -125,40 +173,58 @@
           </p>
         </div>
         <div class="flex lg:flex-row vsm:flex-col">
-          <div class="lg:w-[25%] vsm:w-full ">
-            <img class="lg:w-full lg:h-full vsm:w-full aspect-auto" src="./assets/images/Mission-.jpg" alt="" />
+          <div class="lg:w-[25%] vsm:w-full">
+            <img
+              class="lg:w-full lg:h-full vsm:w-full aspect-auto"
+              src="./assets/images/Mission-.jpg"
+              alt=""
+            />
           </div>
           <div class="lg:w-[75%] vsm:w-full lg:ml-5 vsm:ml-0 vsm:mt-5 lg:mt-0">
-            <h1 class="vsm:text-2xl sm:text-3xl  lg:text-4xl 2xl:text-5xl font-bold ">Our Mission</h1>
+            <h1
+              class="vsm:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold"
+            >
+              Our Mission
+            </h1>
             <p class="2xl:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
               officiis debitis molestias accusantium aperiam eius beatae fuga
               deserunt suscipit! Laborum libero deleniti dolore eaque at animi
-              ea, labore ut, iste nostrum velit perspiciatis obcaecati.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              officiis debitis molestias accusantium aperiam eius beatae fuga
-              deserunt suscipit! Laborum libero deleniti dolore eaque at animi
-              ea, labore ut, iste nostrum velit perspiciatis obcaecati.
+              ea, labore ut, iste nostrum velit perspiciatis obcaecati. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis
+              debitis molestias accusantium aperiam eius beatae fuga deserunt
+              suscipit! Laborum libero deleniti dolore eaque at animi ea, labore
+              ut, iste nostrum velit perspiciatis obcaecati.
             </p>
           </div>
         </div>
 
         <div class="flex lg:flex-row vsm:flex-col mt-10">
-          <div class="lg:w-[75%] vsm:w-full vsm:mt-5 lg:mr-5 vsm:mr-0 lg:mt-0 vsm:order-2 lg:order-1">
-            <h1 class="vsm:text-2xl sm:text-3xl  lg:text-4xl 2xl:text-5xl font-bold ">Our Vision</h1>
+          <div
+            class="lg:w-[75%] vsm:w-full vsm:mt-5 lg:mr-5 vsm:mr-0 lg:mt-0 vsm:order-2 lg:order-1"
+          >
+            <h1
+              class="vsm:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold"
+            >
+              Our Vision
+            </h1>
             <p class="2xl:text-xl">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium sed quisquam doloribus. Temporibus reiciendis maiores
               atque eos dignissimos laboriosam accusamus fugit dolorem, nemo
-              ducimus error voluptates ratione quo aut minima earum ea!
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium sed quisquam doloribus. Temporibus reiciendis maiores
-              atque eos dignissimos laboriosam accusamus fugit dolorem, nemo
-              ducimus error voluptates ratione quo aut minima earum ea!
+              ducimus error voluptates ratione quo aut minima earum ea! Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed
+              quisquam doloribus. Temporibus reiciendis maiores atque eos
+              dignissimos laboriosam accusamus fugit dolorem, nemo ducimus error
+              voluptates ratione quo aut minima earum ea!
             </p>
           </div>
           <div class="lg:w-[25%] vsm:w-full vsm:order-1 lg:order-2">
-            <img class="lg:w-full lg:h-full vsm:w-full aspect-auto" src="/assets/images/Vision.jpg" alt="" />
+            <img
+              class="lg:w-full lg:h-full vsm:w-full aspect-auto"
+              src="/assets/images/Vision.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -167,7 +233,8 @@
       <section class="vsm:mt-10">
         <div class="mb-20">
           <h1
-            class="uppercase sm:-mb-[6rem]  vsm:mt-0 flex items-center justify-center font-bold text-stone-200 sm:text-9xl vsm:text-6xl vsm:-mb-[4rem]">
+            class="uppercase sm:-mb-[6rem] vsm:mt-0 flex items-center justify-center font-bold text-stone-200 sm:text-9xl vsm:text-6xl vsm:-mb-[4rem]"
+          >
             OUR TEAM
           </h1>
           <h1
@@ -183,41 +250,100 @@
           </p>
         </div>
         <div class="flex lg:flex-row vsm:flex-col justify-center items-center">
-            <div class="flex flex-col justify-center items-center mr-1 vsm:mb-8 lg:mb-0">
-              <img class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl" src="./assets/images/ritu.jpg" alt="">
-                <h1 class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase">Ritu Verma</h1>
-                <p class="text-xl mt-1">Director-Sales</p>
-                <a class="text-blue-700 mt-1 text-4xl" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
+          <div
+            class="flex flex-col justify-center items-center mr-1 vsm:mb-8 lg:mb-0"
+          >
+            <img
+              class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl"
+              src="./assets/images/ritu.jpg"
+              alt=""
+            />
+            <h1
+              class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase"
+            >
+              Ritu Verma
+            </h1>
+            <p class="text-xl mt-1">Director-Sales</p>
+            <a class="text-blue-700 mt-1 text-4xl" href=""
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
 
-            <div class="flex flex-col justify-center items-center mx-2 vsm:my-8  lg:my-0">
-              <img class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl" src="./assets/images/sweta.jpg" alt="">
-                <h1 class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 lg:my-0 uppercase">Sweta Verma</h1>
-                <p class="text-xl mt-1">Director-Sales</p>
-                <a class="text-blue-700 mt-1 text-4xl" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
+          <div
+            class="flex flex-col justify-center items-center mx-2 vsm:my-8 lg:my-0"
+          >
+            <img
+              class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl"
+              src="./assets/images/sweta.jpg"
+              alt=""
+            />
+            <h1
+              class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 lg:my-0 uppercase"
+            >
+              Sweta Verma
+            </h1>
+            <p class="text-xl mt-1">Director-Sales</p>
+            <a class="text-blue-700 mt-1 text-4xl" href=""
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
 
-            <div class="flex flex-col justify-center items-center mx-3 vsm:my-8  lg:my-0">
-              <img class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl" src="./assets/images/vijay.jpg" alt="">
-                <h1 class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase">Ritu Verma</h1>
-                <p class="text-xl mt-1">Director-Sales</p>
-                <a class="text-blue-700 mt-1 text-4xl" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
+          <div
+            class="flex flex-col justify-center items-center mx-3 vsm:my-8 lg:my-0"
+          >
+            <img
+              class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl"
+              src="./assets/images/vijay.jpg"
+              alt=""
+            />
+            <h1
+              class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase"
+            >
+              Ritu Verma
+            </h1>
+            <p class="text-xl mt-1">Director-Sales</p>
+            <a class="text-blue-700 mt-1 text-4xl" href=""
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
 
-            <div class="flex flex-col justify-center items-center mx-4 vsm:my-8 lg:my-0">
-              <img class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl" src="./assets/images/harsh.jpg" alt="">
-                <h1 class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase">Ritu Verma</h1>
-                <p class="text-xl mt-1">Director-Sales</p>
-                <a class="text-blue-700 mt-1 text-4xl" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
+          <div
+            class="flex flex-col justify-center items-center mx-4 vsm:my-8 lg:my-0"
+          >
+            <img
+              class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl"
+              src="./assets/images/harsh.jpg"
+              alt=""
+            />
+            <h1
+              class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase"
+            >
+              Ritu Verma
+            </h1>
+            <p class="text-xl mt-1">Director-Sales</p>
+            <a class="text-blue-700 mt-1 text-4xl" href=""
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
 
-            <div class="flex flex-col justify-center items-center mx-4 vsm:my-8  lg:my-0">
-              <img class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl" src="./assets/images/ramniwas.jpg" alt="">
-                <h1 class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase">Ritu Verma</h1>
-                <p class="text-xl mt-1">Director-Sales</p>
-                <a class="text-blue-700 mt-1 text-4xl" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
-
+          <div
+            class="flex flex-col justify-center items-center mx-4 vsm:my-8 lg:my-0"
+          >
+            <img
+              class="w-64 aspect-auto rounded-full shadow-black/30 shadow-xl"
+              src="./assets/images/ramniwas.jpg"
+              alt=""
+            />
+            <h1
+              class="leading-5 text-xl space-x-2 font-bold lg:mt-10 vsm:mt-2 uppercase"
+            >
+              Ritu Verma
+            </h1>
+            <p class="text-xl mt-1">Director-Sales</p>
+            <a class="text-blue-700 mt-1 text-4xl" href=""
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
         </div>
       </section>
       <!-- ========================================================Our team section end =============================================-->
@@ -293,5 +419,6 @@
       </footer>
     </div>
     <!-- ====================================================footer section end =============================================-->
+    <script src="/script/script.js"></script>
   </body>
 </html>

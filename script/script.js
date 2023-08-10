@@ -1,16 +1,3 @@
-// const prev = document.querySelector('#prev')
-// const next = document.querySelector('#next')
-// const slider = document.querySelector('#slider')
-
-// prev.addEventListener('click', () =>{
-//     slider.scrollLeft -= 300
-// })
-
-// next.addEventListener('click', () =>{
-//     slider.scrollLeft += 300
-// })
-
-// console.log("workng")
 console.log("cliked")
 let navButton = document.getElementById('nav-button')
 let navMenu = document.getElementById('nav-menu')
@@ -34,3 +21,4 @@ closeButton.addEventListener('click', ()=>{
         navMenu.classList.remove("left-0") 
      }
 })
+

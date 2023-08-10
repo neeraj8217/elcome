@@ -595,6 +595,18 @@ video {
   top: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.left-full {
+  left: 100%;
+}
+
+.left-80 {
+  left: 20rem;
+}
+
 .z-20 {
   z-index: 20;
 }

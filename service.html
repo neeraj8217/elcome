@@ -23,29 +23,85 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-        <!-- ========================================================navbar section start ========================================-->
-    <nav class="bg-[url('/assets/images/bc.jpg')] flex justify-between items-center px-[1.5em] py-2">
-      <a href="#home" ><img class="vsm:w-36 sm:w-44 md:w-52 aspect-auto" src="./assets/logo/Logo1 1.png" alt=""></a>
-      <input  type="checkbox" id="hamburger"/>
-      <label class="text-white text-2xl vsm:block sm:hidden"for="hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <ul class="text-white gap-4 flex list-none">  
-        <li >
-          <a class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl" href="#about">About</a>
-        </li>
-        <li >
-          <a class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl" href="#features">Products</a>
-        </li>
-        <li >
-          <a class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl" href="#services">Services</a>
-        </li>
-        <li >
-          <a class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl" href="#FAQ">Contacts </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- ========================================================navbar section end ========================================-->
+           <!-- ========================================================navbar section start ========================================-->
+    <div class="overflow-hidden">
+      <nav
+        class="bg-[url('/assets/images/bc.jpg')] w-full bg-center bg-cover flex justify-between items-center px-[1.5em] py-2"
+      >
+        <a href="/index.html"
+          ><img
+            class="vsm:w-36 sm:w-44 md:w-52 aspect-auto"
+            src="./assets/logo/Logo1 1.png"
+            alt=""
+        /></a>
+
+        <ul class="text-white gap-4 flex list-none">
+          <li>
+            <a
+              class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+              href="/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+              href="/product.html"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+              href="/service.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-[0.5rem] hover:text-white hover:bg-prime rounded-xl"
+              href="/contact.html"
+              >Contacts
+            </a>
+          </li>
+        </ul>
+        <button
+          id="nav-button"
+          class="bg-white w-6 h-6 z-30 flex justify-center items-center hover-link text-white vsm:text-black text-3xl my-[1.7rem] mx-5 sm:hidden"
+        >
+          <ion-icon name="reorder-four-outline"></ion-icon>
+        </button>
+        <ul
+          id="nav-menu"
+          class="pl-5 bg-white justify-start text-xl z-20 absolute top-0 -left-full flex-col w-[60%] h-screen items-start flex"
+        >
+          <div class="flex w-full border-b-4 border-slate-200">
+            <li class=" ">
+              <img
+                class="w-56 aspect-auto my-10"
+                src="./assets/logo/Logo1 1.png "
+                alt=""
+              />
+            </li>
+            <li id="close-button" class="text-4xl mt-2">
+              <ion-icon name="close-outline"></ion-icon>
+            </li>
+          </div>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/product.html">Products</a>
+          </li>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/service.html">Services</a>
+          </li>
+          <li class="w-full mt-2 border-b-2 border-slate-200">
+            <a href="/contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ==========================================================nav sectin end=========================================== -->
     <!-- ======================================================Service section start ===============================================-->
     <section class="grid text-xl font-bold place-items-center">
       <div class="mb-20">
@@ -212,5 +268,6 @@
      </div>
    </footer>
    <!-- ====================================================footer section end =============================================-->
+   <script src="/script/script.js"></script>
   </body>
 </html>
